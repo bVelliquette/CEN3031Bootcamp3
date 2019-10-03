@@ -14,7 +14,9 @@ module.exports = function(req, res, next) {
     //Setup your options q and key are provided. Feel free to add others to make the JSON response less verbose and easier to read 
     var options = { 
       q: addressTemp4,
-      key: config.openCage.key,  
+      key: config.openCage.key,
+      no_annotations: 1,
+      limit: 1,
     }
 
     //Setup your request using URL and options - see ? for format
